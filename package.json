@@ -1,0 +1,20 @@
+{
+  "name": "nutrimeow",
+  "version": "1.0.0",
+  "description": "NutriMeow - Cat Wet Food Scraping & Intelligence Dashboard for Shopee and Tokopedia",
+  "main": "server/server.js",
+  "scripts": {
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "node server/server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": ["cat-food", "scraper", "shopee", "tokopedia", "price-comparison"],
+  "author": "NutriMeow Team",
+  "license": "ISC"
+}
